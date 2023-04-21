@@ -4,31 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="container">
       <header>
         <div id="line"></div>
-        <div id="linetwo">
-            n<span>ew</span>
-            
-            </div>
-         <div id="flex">
-            <img src="download (1).jpeg" alt="Velisa">
-            <ul class="links">
-                <div class="menu"><i class="fa-solid fa-bars"></i></div>
-                <li class="items"><a href="#">HTML</a></li>
-                <li class="items"><a href="#">CSS</a></li>
-                <li class="items"><a href="#">JAVASCRIPT</a></li>
-                <li class="items"><a href="#">REACT</a></li>
-                <li class="items"><a href="#">Database</a></li>
-                <li class="items"><a href="#">NoteJs</a></li>
-            </ul>
-         </div>
+        <div id="linetwo">n<span>ew</span></div>
+        <div id="flex">
+          <img src="download (1).jpeg" alt="Velisa" />
+          <ul class="links">
+            <div class="menu"><i class="fa-solid fa-bars"></i></div>
+            <li class="items"><a href="#">HTML</a></li>
+            <li class="items"><a href="#">CSS</a></li>
+            <li class="items"><a href="#">JAVASCRIPT</a></li>
+            <li class="items"><a href="#">REACT</a></li>
+            <li class="items"><a href="#">Database</a></li>
+            <li class="items"><a href="#">NoteJs</a></li>
+          </ul>
+        </div>
       </header>
+
+      <main>
+        <div id="form">
+            <fieldset>
+                <label for="">Name:<input type="text"></label>
+                <label for="">Email:<input type="text"></label>
+                <label for="">Password:<input type="text"></label>
+
+                <div id="status">
+                    <h2>status</h2>
+                    <input type="radio">Student
+                    <input type="radio">Post Graduate
+                    <input type="radio">Other
+                </div>
+
+                <div id="topics">
+                    <h2>Which topics are you struggling with the most</h2>
+                    <input type="checkbox">HTML
+                    <input type="checkbox">CSS
+                    <input type="checkbox">JAVASCRIPT
+                    <input type="checkbox">DATABASE
+                    <input type="checkbox">REACT
+                    <input type="checkbox">NODE JS
+
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                        <option value="c++">C++</option>
+                        <option value="typescript">TypeScript</option>
+                        <option value="c#">C#</option>
+                    </select>
+                </div>
+            </fieldset>
+        </div>
+      </main>
     </div>
   </body>
 </html>
