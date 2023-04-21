@@ -1,14 +1,14 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1 {
-    background-color: black;
-    background-color: rgb(255, 217, 0);
+  background-color: black;
+  background-color: rgb(255, 217, 0);
 }
 
 p {
-    text-shadow: 2px 3px 10px ;
+  text-shadow: 2px 3px 10px;
 }
