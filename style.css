@@ -17,7 +17,7 @@
     --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
 
     --darkgreen: rgba(2, 67, 2, 0.9);
-    --darkOrange: rgb(226, 151, 11);
+    --darkOrange: rgb(226, 197, 11);
     --lightgray: rgba(240, 239, 239, 0.672);
     --white: white;
     --black: black;
@@ -45,8 +45,10 @@ body {
 }
 
 header{
-    position: relative;
+    position: fixed;
     padding: 10px 0;
+    top: 0;
+    width: 81%;
 }
 /* #line {
     position: absolute;
@@ -81,7 +83,9 @@ span {
     display: flex;
     gap: 30px;
     list-style: none;
-    
+    background: linear-gradient(90deg,rgb(9, 185, 9),rgb(3, 68, 33));
+    padding: 2%;
+    box-shadow: 2px 2px 5px ;
 }
 
 img {
@@ -90,15 +94,97 @@ img {
   box-shadow: 1px 1px gainsboro;
 }
 
-.items a{
+.items a {
     text-decoration: none;
     font-weight: 400;
-    color: var(--darkOrange);
+    color: var(--white);
     font-size: 18px;
     text-transform: uppercase;
     font-family: var(--font2);
-    text-shadow: 1px 1px 9px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.items a:hover {
+    border-bottom: 4px solid var(--darkgreen);
+    transition: 0.7s;
 }
 .menu {
     display: none;
+}
+
+/*Main coding*/
+main {
+    padding: 10px;
+}
+
+fieldset {
+    width: 78%;
+    padding: 8px 5px;
+    margin: 2% 0;
+}
+
+textarea {
+    margin: 2%;
+}
+
+section {
+    background: linear-gradient(green,rgb(40, 40, 40));
+    color: var(--white);
+    text-align: center;
+    line-height: 30px;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+/*grid */
+#cover {
+    margin-top: 10%;
+    display: grid;
+    gap: 24px;
+    grid-template-rows: 1fr auto;
+    min-height: 60vh;
+}
+
+@media (min-width: 700px){
+     #cover #box {
+        grid-template-columns: repeat(6 ,1fr);
+        grid-template-rows: auto 1fr;
+     }
+     main {
+        grid-column: 1 / span 4;
+     }
+     section {
+        grid-column: 5 / span 2;
+     }
+}
+
+#status {
+    display: inline-block;
+    border: 4px solid var(--black);
+    padding: 10px;
+}
+button {
+    border-radius: 20px;
+    color: var(--black);
+    padding: 15px 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: rgba(144, 238, 144, 0.511);
+    border: none;
+    box-shadow: 2px 1px 8px var(--darkOrange);
+    margin-left: 65%;
+}
+button:hover {
+    background-color: var(--darkOrange);
+    color: var(--white);
+    transform:scale(1.1);
+    border: none;
+    text-transform: lowercase;
+    transition: 0.4s;
+}
+
+#line label, #status label{
+    display: block;
+    line-height: 25px;
 }

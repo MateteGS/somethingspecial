@@ -30,41 +30,82 @@
         </div>
       </header>
 
-      <main>
+      <div id="cover">
+      <main id="box">
         <div id="form">
-            <fieldset>
-                <label for="">Name:<input type="text"></label>
-                <label for="">Email:<input type="text"></label>
-                <label for="">Password:<input type="text"></label>
-
-                <div id="status">
-                    <h2>status</h2>
-                    <input type="radio">Student
-                    <input type="radio">Post Graduate
-                    <input type="radio">Other
-                </div>
-
-                <div id="topics">
-                    <h2>Which topics are you struggling with the most</h2>
-                    <input type="checkbox">HTML
-                    <input type="checkbox">CSS
-                    <input type="checkbox">JAVASCRIPT
-                    <input type="checkbox">DATABASE
-                    <input type="checkbox">REACT
-                    <input type="checkbox">NODE JS
-
-                    <select name="" id="">
-                        <option value=""></option>
-                        <option value="java">Java</option>
-                        <option value="python">Python</option>
-                        <option value="c++">C++</option>
-                        <option value="typescript">TypeScript</option>
-                        <option value="c#">C#</option>
-                    </select>
-                </div>
-            </fieldset>
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="">Name: <input type="text" /></label>
+            <label for="">Email: <input type="text" /></label>
+            <label for="">Password: <input type="text" /></label>
+          </fieldset>
+            <div id="status">
+              </label><h2>status</h2>
+              <label for=""><input type="radio" /> Student</label> 
+              <label for=""><input type="radio" /> Post Graduate</label>
+              <label for=""><input type="radio" /> Other</label>
+            </div>
+          
+            <div id="topics">
+              <div id="line">
+              <h2>Which topics are you struggling with the most</h2>
+              <label for=""><input type="checkbox" /> HTML</label> 
+              <label for=""><input type="checkbox" /> CSS</label>
+              <label for=""><input type="checkbox" /> JAVASCRIPT</label>
+              <label for=""><input type="checkbox" /> DATABASE</label> 
+              <label for=""><input type="checkbox" /> REACT</label>
+              <label for=""><input type="checkbox" /> NODE JS</label>
+              
+              <label for="">Which langauges would you like us to add:
+              <select name="" id="">
+                <option value="">Select langauge</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="c++">C++</option>
+                <option value="typescript">TypeScript</option>
+                <option value="c#">C#</option>
+              </select></label>
+            </div>
+            </div>
+       
+          <textarea
+            name=""
+            id="feedback"
+            cols="60"
+            rows="10"
+            placeholder="please help us improve, by leaving your feeback"
+          ></textarea>
+          <div>
+            <button id="submit">Send</button>
+          </div>
+      
         </div>
       </main>
+      <section id="box">
+        <div id="sidebar">
+        <h2>Program Managers</h2>
+        <p>Pauli Taylor</p>
+        <p>Dee Cranswick</p>
+        <h2>Facilitator</h2>
+        <p>Brham Dev Mahato</p>
+         <br>
+        <h2><u>2023 learners</u></h2>
+
+        <p>Lodrick Raven Munonela</p>
+        <p>Calab Matoma Maboya</p>
+        <p>Nokuzola Florida</p>
+        <p>Mzwandile Thato jr</p>
+        <p>Lesiba Refentse Ledwaba</p>
+        <p>Chuma Wakaba</p>
+        <p>Matlala Matete</p>
+        <p>Calab Matoma</p>
+        <p>Ryan Van Zyl</p>
+        <p>Kaylin Dee</p>
+        <p>Muhomed sighn</p>
+        </section>
+      </div>
+    </div>
+
     </div>
   </body>
 </html>
