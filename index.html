@@ -28,7 +28,31 @@
             <li class="items"><a href="#">NoteJs</a></li>
           </ul>
         </div>
-      </header>
+      </header> 
+
+      <div>
+        <figure id="images">
+          <div id="one">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fElUJTIwc3R1ZGVudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60 alt=" id="image1"/>
+          <figcaption>Working together to succeed</figcaption>
+ 
+          </div>
+          <div id="two">
+          <img src="https://images.unsplash.com/photo-1576267423048-15c0040fec78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29tcHV0ZXIlMjBzdHVkZW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" id="image2"/>
+          <figcaption>Learning doesn't have to be boring</figcaption>
+       
+          </div>
+          <div id="three">
+          <img src="https://images.unsplash.com/photo-1556636530-6b7482d80e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcHV0ZXIlMjBzdHVkZW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" id="image3"/>
+          <figcaption>If you put in the time there's no way you cannot succeed</figcaption>
+           </div>
+           <div id="four">
+          <img src="https://images.unsplash.com/photo-1612299273045-362a39972259?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbXB1dGVyJTIwc3R1ZGVudHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" id="image4"/>
+          <figcaption>positivity is key</figcaption>
+          </div>
+
+      </figure>
+      </div>
 
       <div id="cover">
       <main id="box">
@@ -39,22 +63,22 @@
             <label for="email">Email: <input type="email" id="email"/></label>
             <label for="password">Password: <input type="password" id="password"/></label>
           </fieldset>
-            <div id="status">
-              </label><h2>status</h2>
+            <div id="title">
+              </label id><h2>status</h2>
               <label for="status"><input type="radio" name="stats" id="student" value="student"/> Student</label> 
               <label for="status"><input type="radio" name="stats" id="graduate" value="graduate"/> Post Graduate</label>
               <label for="status"><input type="radio" name="stats" id="other" value="other"/> Other</label>
             </div>
           
-            <div id="topics">
+            <div >
               <div id="line">
               <h2>Which topics are you struggling with the most</h2>
-              <label for="topics"><input type="checkbox" /> HTML</label> 
-              <label for="topics"><input type="checkbox" /> CSS</label>
-              <label for="topics"><input type="checkbox" /> JAVASCRIPT</label>
-              <label for="topics"><input type="checkbox" /> DATABASE</label> 
-              <label for="topics"><input type="checkbox" /> REACT</label>
-              <label for="topics"><input type="checkbox" /> NODE JS</label>
+              <label for="topics"><input type="checkbox" id="html" value="HTML"/> HTML</label> 
+              <label for="topics"><input type="checkbox" id="css" value="CSS"/> CSS</label>
+              <label for="topics"><input type="checkbox" id="javaScript" value="JavaScript"/> JAVASCRIPT</label>
+              <label for="topics"><input type="checkbox" id="mango DB"  value="Mango DB"/> Mango DB</label> 
+              <label for="topics"><input type="checkbox" id="react" value="React"/> REACT</label>
+              <label for="topics"><input type="checkbox" id="Node Js" value="Node Js"/> NODE JS</label>
               
               <label for="langauge">Which langauges would you like us to add:
               <select name="" id="langauge">
@@ -73,7 +97,7 @@
             id="feedback"
             cols="60"
             rows="10"
-            placeholder="please help us improve, by leaving your feeback"
+            placeholder="please help us improve, by leaving us your feeback"
           ></textarea>
           <div>
             <button id="btn">Send</button>
