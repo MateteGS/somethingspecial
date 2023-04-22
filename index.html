@@ -35,29 +35,29 @@
         <div id="form">
           <fieldset>
             <legend>Personal Information</legend>
-            <label for="">Name: <input type="text" /></label>
-            <label for="">Email: <input type="text" /></label>
-            <label for="">Password: <input type="text" /></label>
+            <label for="name">Name: <input type="text" id="name"/></label>
+            <label for="email">Email: <input type="email" id="email"/></label>
+            <label for="password">Password: <input type="password" id="password"/></label>
           </fieldset>
             <div id="status">
               </label><h2>status</h2>
-              <label for=""><input type="radio" /> Student</label> 
-              <label for=""><input type="radio" /> Post Graduate</label>
-              <label for=""><input type="radio" /> Other</label>
+              <label for="status"><input type="radio" name="stats" id="student" value="student"/> Student</label> 
+              <label for="status"><input type="radio" name="stats" id="graduate" value="graduate"/> Post Graduate</label>
+              <label for="status"><input type="radio" name="stats" id="other" value="other"/> Other</label>
             </div>
           
             <div id="topics">
               <div id="line">
               <h2>Which topics are you struggling with the most</h2>
-              <label for=""><input type="checkbox" /> HTML</label> 
-              <label for=""><input type="checkbox" /> CSS</label>
-              <label for=""><input type="checkbox" /> JAVASCRIPT</label>
-              <label for=""><input type="checkbox" /> DATABASE</label> 
-              <label for=""><input type="checkbox" /> REACT</label>
-              <label for=""><input type="checkbox" /> NODE JS</label>
+              <label for="topics"><input type="checkbox" /> HTML</label> 
+              <label for="topics"><input type="checkbox" /> CSS</label>
+              <label for="topics"><input type="checkbox" /> JAVASCRIPT</label>
+              <label for="topics"><input type="checkbox" /> DATABASE</label> 
+              <label for="topics"><input type="checkbox" /> REACT</label>
+              <label for="topics"><input type="checkbox" /> NODE JS</label>
               
-              <label for="">Which langauges would you like us to add:
-              <select name="" id="">
+              <label for="langauge">Which langauges would you like us to add:
+              <select name="" id="langauge">
                 <option value="">Select langauge</option>
                 <option value="java">Java</option>
                 <option value="python">Python</option>
@@ -76,7 +76,7 @@
             placeholder="please help us improve, by leaving your feeback"
           ></textarea>
           <div>
-            <button id="submit">Send</button>
+            <button id="btn">Send</button>
           </div>
       
         </div>
@@ -107,5 +107,6 @@
     </div>
 
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
