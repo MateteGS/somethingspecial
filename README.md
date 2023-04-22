@@ -42,7 +42,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- my teacher Dev
+- for colors used the Velisa Logo
 
 ## 📝 License
 
