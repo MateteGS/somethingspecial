@@ -4,26 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="container">
       <header>
-         <img src="download (1).jpeg" alt="Velisa">
-         <div id="flex">
-            <ul class="links">
-                <div class="menu"><i class="fa-solid fa-bars"></i></div>
-                <li class="items"><a href="#">HTML</a></li>
-                <li class="items"><a href="#">CSS</a></li>
-                <li class="items"><a href="#">JAVASCRIPT</a></li>
-                <li class="items"><a href="#">REACT</a></li>
-                <li class="items"><a href="#">Database</a></li>
-                <li class="items"><a href="#">NoteJs</a></li>
-            </ul>
-         </div>
+        <div id="line"></div>
+        <div id="linetwo">n<span>ew</span></div>
+        <div id="flex">
+          <img src="download (1).jpeg" alt="Velisa" />
+          <ul class="links">
+            <div class="menu"><i class="fa-solid fa-bars"></i></div>
+            <li class="items"><a href="#">HTML</a></li>
+            <li class="items"><a href="#">CSS</a></li>
+            <li class="items"><a href="#">JAVASCRIPT</a></li>
+            <li class="items"><a href="#">REACT</a></li>
+            <li class="items"><a href="#">Database</a></li>
+            <li class="items"><a href="#">NoteJs</a></li>
+          </ul>
+        </div>
       </header>
+
+      <div id="cover">
+      <main id="box">
+        <div id="form">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name: <input type="text" id="name"/></label>
+            <label for="email">Email: <input type="email" id="email"/></label>
+            <label for="password">Password: <input type="password" id="password"/></label>
+          </fieldset>
+            <div id="status">
+              </label><h2>status</h2>
+              <label for="status"><input type="radio" name="stats" id="student" value="student"/> Student</label> 
+              <label for="status"><input type="radio" name="stats" id="graduate" value="graduate"/> Post Graduate</label>
+              <label for="status"><input type="radio" name="stats" id="other" value="other"/> Other</label>
+            </div>
+          
+            <div id="topics">
+              <div id="line">
+              <h2>Which topics are you struggling with the most</h2>
+              <label for="topics"><input type="checkbox" /> HTML</label> 
+              <label for="topics"><input type="checkbox" /> CSS</label>
+              <label for="topics"><input type="checkbox" /> JAVASCRIPT</label>
+              <label for="topics"><input type="checkbox" /> DATABASE</label> 
+              <label for="topics"><input type="checkbox" /> REACT</label>
+              <label for="topics"><input type="checkbox" /> NODE JS</label>
+              
+              <label for="langauge">Which langauges would you like us to add:
+              <select name="" id="langauge">
+                <option value="">Select langauge</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="c++">C++</option>
+                <option value="typescript">TypeScript</option>
+                <option value="c#">C#</option>
+              </select></label>
+            </div>
+            </div>
+       
+          <textarea
+            name=""
+            id="feedback"
+            cols="60"
+            rows="10"
+            placeholder="please help us improve, by leaving your feeback"
+          ></textarea>
+          <div>
+            <button id="btn">Send</button>
+          </div>
+      
+        </div>
+      </main>
+      <section id="box">
+        <div id="sidebar">
+        <h2>Program Managers</h2>
+        <p>Pauli Taylor</p>
+        <p>Dee Cranswick</p>
+        <h2>Facilitator</h2>
+        <p>Brham Dev Mahato</p>
+         <br>
+        <h2><u>2023 learners</u></h2>
+
+        <p>Lodrick Raven Munonela</p>
+        <p>Calab Matoma Maboya</p>
+        <p>Nokuzola Florida</p>
+        <p>Mzwandile Thato jr</p>
+        <p>Lesiba Refentse Ledwaba</p>
+        <p>Chuma Wakaba</p>
+        <p>Matlala Matete</p>
+        <p>Calab Matoma</p>
+        <p>Ryan Van Zyl</p>
+        <p>Kaylin Dee</p>
+        <p>Muhomed sighn</p>
+        </section>
+      </div>
     </div>
+
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
