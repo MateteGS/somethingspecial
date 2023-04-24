@@ -7,7 +7,7 @@ their comments about their experience with Velisa also, it will be a place
 were they can get all the course content, notes & assistance
 
 ## live View
-[live view](https://6443b40634418c7f7000b986--meek-gingersnap-c4c575.netlify.app/)
+[live view](https://app.netlify.com/sites/fabulous-marshmallow-8c256e/overview)
 
 ## Built With
 
