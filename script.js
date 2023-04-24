@@ -17,7 +17,7 @@ Display.prototype.show = function () {
   Dataset.map((info) => {
     htmlUi += `
         <h2>Name: ${info.name}</h2> 
-        <p> <b>Status:<b> ${info.status}</p> 
+        <p> <b>Status:</b> ${info.status}</p> 
         <p> <b>Email:</b> ${info.email}<p>
         <p> <b>Difficult topics:</b> ${info.topics} <p>
         <p> <b>Langauges Add:</b>${info.langauge} <p>
@@ -28,8 +28,8 @@ Display.prototype.show = function () {
   display.innerHTML = htmlUi;
 };
 
-let btn = document.getElementById('btn');
-btn.addEventListener('click', addInformationtoDataset);
+const libraryForm = document.getElementById("libraryForm");
+libraryForm.addEventListener("submit", addInformationtoDataset);
 
 function addInformationtoDataset(e) {
   //do stuff here
@@ -38,10 +38,10 @@ function addInformationtoDataset(e) {
   let email = document.getElementById('email').value;
   let topics;
   let langauge = document.getElementById('langauge');
-  let feedback = parseFloat(document.getElementById('feedback').value);
+  let feedback = document.getElementById('feedback').value;
   let status;
   let student = document.getElementById('student');
-  let graduate = document.getElementById('graduate');
+  let graduate = document.getElementById('graduate').value;
   let other = document.getElementById('other');
 
   let react = document.getElementById('react');
@@ -53,7 +53,7 @@ function addInformationtoDataset(e) {
     status = student.value;
   }
   if (graduate.checked) {
-    status = graduate.value;
+    status = graduate;
   }
   if (other.checked) {
     status = other.value;
@@ -68,4 +68,6 @@ function addInformationtoDataset(e) {
   console.log(Dataset);
   let display = new Display();
   display.show();
+
+  e.preventDefault();
 }
